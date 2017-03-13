@@ -23,11 +23,7 @@ Template.showForum.events({
   'submit #editstatus'(event, template){
     event.preventDefault();
     console.log(Session.get('edit-item-id'));
-    Forum.update(
-      {_id: Session.get('edit-item-id')}
-      , {
-        $set : {content: event.target.econtent.value}
-      }
-      );
+    Meteor.call('forum.update', Session.get('edit-item-id'), event.target.econtent.value);
+   
   }
 });
