@@ -1,0 +1,10 @@
+<template name="main_layout">
+  {{> navbar}} 
+  <!--{{> postforum}}-->
+  <a href ="/"> home </a>
+   <a href ="/post"> post </a>
+  <div style="padding-top: 20px">
+    <!--{{> showForum}}-->
+      {{> Template.dynamic template=main}}
+  </div>
+</template>
