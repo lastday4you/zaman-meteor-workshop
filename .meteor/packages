@@ -24,3 +24,5 @@ twbs:bootstrap
 session
 accounts-ui
 accounts-password
+kadira:flow-router
+kadira:blaze-layout
