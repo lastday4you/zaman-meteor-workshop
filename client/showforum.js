@@ -2,6 +2,7 @@ import {Forum} from '../lib/forum';
 
 Template.showForum.onCreated(function () {
   Session.set('edit-item-id', null);
+  Meteor.subscribe('all_forum');
 });
 
 Template.showForum.helpers({
