@@ -6,7 +6,7 @@ Template.postforum.events({
     event.preventDefault();
     forum = {
       user_id: Meteor.userId(),
-      content: event.target.content.value
+      content: event.target.content.value,
     };
 
     Meteor.call('forum.insert', forum);
